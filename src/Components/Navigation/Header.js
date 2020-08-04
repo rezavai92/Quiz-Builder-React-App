@@ -8,7 +8,7 @@ const Header =()=>{
 
         
    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-   <Navbar.Brand href="/"><span style={{fontFamily:"arial "}}>QuizBee</span></Navbar.Brand>
+   <Navbar.Brand href="/"><span style={{fontFamily:"arial "}}>QuizoPhile</span></Navbar.Brand>
    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
    <Navbar.Collapse id="responsive-navbar-nav">
      <Nav className="mr-auto">
