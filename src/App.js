@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React ,  {Component} from 'react';
+//import Router from './Components/Router/Router'
+
+import Quizmaker from './Components/QuizMaker/Quizmaker'
+import Homepage from './Components/Homepage/Homepage'
+import Header from'./Components/Navigation/Header'
+
+
+
+import Questions from './Components/Questions/Questions'
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import Quiz from './Components/Question/question';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component  {
+
+
+
+render (){
+
+  
+
+return ( 
+
+
+<BrowserRouter>   
+                                         
+       <switch>                                   
+       <Route path='/' exact component={Homepage} ></Route>
+       <Route path='/makequiz' exact component={Quizmaker}></Route>
+       </switch>
+</BrowserRouter>
+       
+           
+     
+
+  )
+  
 }
 
+}
 export default App;
